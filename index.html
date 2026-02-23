@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NeuroLearn - Smart Learning</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .float {
+      animation: float 5s ease-in-out infinite;
+    }
+    .float-slow {
+      animation: float 8s ease-in-out infinite;
+    }
+    .float-fast {
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+  </style>
+</head>
+<body class="overflow-hidden font-sans min-h-screen flex flex-col relative"
+      style="background: url('assets/images/your-background.jpg') center/cover no-repeat fixed;">
+
+  <!-- Header with Logo + Nav -->
+  <header class="w-full px-8 py-4 z-10 relative flex justify-between items-center">
+    <div class="flex items-center gap-2">
+  <img src="assets/images/logo.jpg" alt="Logo" class="w-14 h-14">
+  <h1 class="text-2xl font-extrabold text-purple-700">NeuroLearn</h1>
+</div>
+
+    <nav class="flex gap-8 text-md font-medium text-purple-700">
+      <a href="#" class="hover:text-purple-900 transition">Home</a>
+      <a href="#" class="hover:text-purple-900 transition">About</a>
+      <a href="#" class="hover:text-purple-900 transition">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+<!-- Main Content -->
+<div class="flex-grow flex flex-col lg:flex-row items-start relative z-10">
+
+  <!-- Left: Text + Buttons -->
+  <div class="flex flex-col justify-center text-left pl-4 lg:pl-8 pt-16 lg:pt-32">
+    <h1 class="text-6xl lg:text-7xl font-extrabold text-pink-600 mb-6 leading-tight">NeuroLearn</h1>
+    <h2 class="text-3xl lg:text-4xl font-semibold text-purple-600 leading-snug">
+  A smart learning platform for
+</h2>
+<h2 class="text-3xl lg:text-4xl font-semibold text-purple-600 leading-snug">
+  neurodiverse kids
+</h2>
+
+    <p class="text-lg lg:text-xl text-gray-700 mt-4 mb-8 max-w-lg">
+  Empowering every child to learn in their own unique way. Our interactive platform adapts to different
+  learning styles, making education fun and accessible for all.
+ </p>
+
+    <div class="flex gap-6 justify-start">
+      <a href="login.php" class="px-8 py-3 bg-purple-600 text-white rounded-full shadow hover:bg-purple-700 transition text-lg">Login</a>
+      <a href="signup.php" class="px-8 py-3 border-2 border-green-500 text-green-600 rounded-full hover:bg-green-100 transition text-lg">Sign Up</a>
+    </div>
+  </div>
+
+</div>
+
+  <!-- Footer -->
+  <footer class="text-center py-3 text-gray-500 text-sm z-10 mt-10">
+    © 2025 NeuroLearn. All rights reserved.
+  </footer>
+
+</body>
+</html>
